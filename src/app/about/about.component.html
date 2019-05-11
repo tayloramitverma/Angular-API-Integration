@@ -1,0 +1,16 @@
+<app-layout>
+<h1 class="center">Virtual Scroll using Angular 7</h1>
+
+<div class="virtual-scroll-wrap">
+  <cdk-virtual-scroll-viewport itemSize="10" style="height: 500px" itemSize="90" >
+      <li *cdkVirtualFor="let n of numbers" class="animated lightSpeedIn item-wrap"> {{n}}
+
+      	<div class="info-wrap">
+          <h4>Tbhis is testing</h4>
+          <h6>dfgdfgdfg</h6>
+      </div>
+       </li>
+
+  </cdk-virtual-scroll-viewport>
+</div>
+</app-layout>

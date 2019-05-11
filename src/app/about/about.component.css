@@ -1,0 +1,84 @@
+.virtual-scroll-wrap {
+    width: 50%;
+    margin: auto;
+    min-width: 380px
+  }
+  
+  cdk-virtual-scroll-viewport {
+    height: 100px
+    li {
+        height: 100px;
+        list-style: none;
+        border: 1px solid #ccc;
+        margin: 10px 30px
+      }
+      .thumbnail-wrap {
+        width: 100px;
+        display: inline-block
+        img {
+            height: 65px;
+            margin: 18px 14px
+          }
+      }
+      .info-wrap {
+        vertical-align: top;
+        display: inline-block
+      }
+  }
+  
+  
+  @-webkit-keyframes lightSpeedIn {
+    from {
+      -webkit-transform: translate3d(0,40px,0);
+      transform: translate3d(0,40px,0);
+      opacity: 0
+    }
+  
+    60% {
+      opacity: 1
+    }
+  
+    80% {
+      opacity: 1
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+  }
+  
+  @keyframes lightSpeedIn {
+    from {
+      -webkit-transform: translate3d(0,40px,0);
+      transform: translate3d(10,40px,0);
+      opacity: 0
+    }
+  
+    60% {
+      opacity: 1
+    }
+  
+    80% {
+      opacity: 1
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0)
+    }
+  }
+  
+  .lightSpeedIn {
+    -webkit-animation-name: lightSpeedIn;
+    animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+  }

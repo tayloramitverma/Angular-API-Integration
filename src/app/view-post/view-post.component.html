@@ -1,0 +1,7 @@
+<app-layout>
+<div *ngIf="blog[0]">
+	<h1>{{blog[0].title.rendered}}</h1>
+	<p [innerHTML]="blog[0].content.rendered | keepHtml"></p>
+
+</div>
+</app-layout>
